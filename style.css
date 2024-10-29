@@ -18,6 +18,11 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+/* 
+.section__text__p2 p {
+  color: #C86B85 !important;
+} */
+
 
 /* TRANSITION */
 
@@ -31,6 +36,7 @@ a,
 nav,
 .nav-links {
   display: flex;
+  color: #635985;
 }
 
 nav {
@@ -43,10 +49,11 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  color:#635985;
 }
 
 a {
-  color: black;
+  color:#635985;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -118,6 +125,15 @@ a:hover {
   list-style: none;
 }
 
+.circular-image {
+  width: 450px; /* Set desired width */
+  height: 450px; /* Set desired height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  display: block;
+}
+
+
 .menu-links.open {
   max-height: 300px;
 }
@@ -149,7 +165,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 2vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -183,6 +199,8 @@ section {
 
 .section__text p {
   font-weight: 600;
+  color: #635985 !important;
+
 }
 
 .section__text__p1 {
@@ -197,6 +215,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #635985;
 }
 
 #socials-container {
@@ -273,6 +292,14 @@ section {
   margin-top: 2rem;
 }
 
+.about-containers-1 {
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+  gap: 2rem; /* Add space between the two experience sections */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -300,7 +327,23 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: left;
+}
+
+.details-container-1 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border-color: rgb(163, 163, 163);
+  text-align: left;
+}
+
+.details-container p {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  color: #635985;
+  margin-bottom: 1rem;
 }
 
 .section-container {
@@ -324,13 +367,14 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; 
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 2rem; 
 }
 
 .article-container {
@@ -370,6 +414,21 @@ article .icon {
   height: 90%;
 }
 
+.project-img-1 {
+  border-radius: 2rem;
+  width: 90%;
+}
+
+.heart-img {
+  height: 190px; 
+  border-radius: 2rem;
+
+  width: 90%;  
+  object-fit: contain;
+  display: block;
+}
+
+
 .project-title {
   margin: 1rem;
   color: black;
@@ -386,7 +445,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 20vh;
 }
 
 .contact-info-upper-container {
